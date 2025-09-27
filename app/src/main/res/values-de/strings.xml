@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Qibla Glyph Matrix</string>
+    <string name="toy_name">Qibla Finder</string>
+    <string name="toy_summary">Halte gedrückt und lasse danach los um die Richtung der Qibla zu sehen</string>
+</resources>
