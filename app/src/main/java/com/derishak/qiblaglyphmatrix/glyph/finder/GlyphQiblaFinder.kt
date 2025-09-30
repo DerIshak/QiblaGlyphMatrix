@@ -141,7 +141,7 @@ class GlyphQiblaFinder : GlyphMatrixService("Glyph-Qibla-Finder") {
             while (true) {
                 delay(100L)
                 if (hasLocation) drawArrow()
-                else drawQuestionMark()
+                else drawLocationMark()
             }
         }
     }
@@ -172,19 +172,19 @@ class GlyphQiblaFinder : GlyphMatrixService("Glyph-Qibla-Finder") {
         glyphMatrixManager?.setMatrixFrame(frame.render())
     }
 
-    fun drawQuestionMark() {
+    fun drawLocationMark() {
         val iconObject = GlyphMatrixObject.Builder()
             .setImageSource(
                 GlyphMatrixUtils.drawableToBitmap(
                     ContextCompat.getDrawable(
                         this as Context,
-                        R.drawable.question_mark_circled_svgrepo_com
+                        R.drawable.location_pin_svgrepo_com
                     )
                 )
             )
-            .setScale(100)
+            .setScale(80)
             .setOrientation(0)
-            .setPosition(0, 0)
+            .setPosition(3, 3)
             .setReverse(false)
             .build()
 
